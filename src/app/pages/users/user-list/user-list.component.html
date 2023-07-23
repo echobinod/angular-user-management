@@ -1,4 +1,8 @@
-<app-breadcrumb [activeLink]="'List'"></app-breadcrumb>
+<div class="px-4 my-2 flex justify-between">
+  <app-breadcrumb [activeLink]="'List'"></app-breadcrumb>
+  <button class="btn btn-default" [routerLink]="['/users/create']">Create New</button>
+</div>
+
 <div class="mx-4 w-100 mt-4 card bg-base-100 shadow-xl">
   <div class="card -body">
     <h2 class="card-title mb-4">Users list</h2>

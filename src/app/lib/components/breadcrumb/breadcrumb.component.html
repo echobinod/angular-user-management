@@ -1,10 +1,7 @@
-<div class="px-4 my-2 flex justify-between">
-  <div class="text-sm breadcrumbs">
-    <ul>
-      <li><a [routerLink]="['/']">Home</a></li>
-      <li><a [routerLink]="['/users']">Users</a></li>
-      <li>{{activeLink}}</li>
-    </ul>
-  </div>
-  <button class="btn btn-default" [routerLink]="['/users/create']">Create</button>
+<div class="text-sm breadcrumbs">
+  <ul>
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li><a [routerLink]="['/users']">Users</a></li>
+    <li>{{activeLink}}</li>
+  </ul>
 </div>
