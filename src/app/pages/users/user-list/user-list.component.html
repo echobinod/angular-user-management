@@ -1,6 +1,6 @@
 <div class="px-4 my-2 flex justify-between">
   <app-breadcrumb [activeLink]="'List'"></app-breadcrumb>
-  <button class="btn btn-default" [routerLink]="['/users/create']">Create New</button>
+  <button class="btn btn-default btn-outline" [routerLink]="['/users/create']">Create New</button>
 </div>
 
 <div class="mx-4 w-100 mt-4 card bg-base-100 shadow-xl">
@@ -27,7 +27,7 @@
           <td>{{user.department}}</td>
           <td>{{user.isAdmin}}</td>
           <th>
-            <button class="btn btn-ghost btn-xs" [routerLink]="['/users/detail/'+user.id]">details</button>
+            <button class="btn btn-outline btn-xs" [routerLink]="['/users/detail/'+user.id]">details</button>
           </th>
         </tr>
       </tbody>

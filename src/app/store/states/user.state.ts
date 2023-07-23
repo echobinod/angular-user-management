@@ -5,5 +5,7 @@ export interface UserState {
 }
 
 export const initialUserState: UserState = {
-    users: [],
+    users: [
+        { id: '123', firstName: 'John', lastName: 'Doe', username: 'john123', department: 'Marketing', isAdmin: true },
+    ],
 };
