@@ -6,7 +6,5 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./breadcrumb.component.css'],
 })
 export class BreadcrumbComponent {
-    @Input() activeLink: string = 'List';
-
-    constructor() {}
+    @Input() activeLink = 'List';
 }

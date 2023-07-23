@@ -8,24 +8,24 @@
       #createDirective="ngForm">
       <h2 class="card-title">Create new user</h2>
       <div class="form-control w-full max-w-xs">
-        <label class="label">
+        <label class="label" for="firstNameInput">
           <span class="label-text">First Name</span>
         </label>
         <input type="text" formControlName="firstName" placeholder="First Name"
           class="input input-bordered w-full max-w-xs" />
-        <label class="label"
+        <label class="label" for="firstNameInput"
           *ngIf="userCreateForm.get('firstName')?.invalid && (userCreateForm.get('firstName')?.dirty || userCreateForm.get('firstName')?.touched)">
           <span *ngIf="userCreateForm.get('firstName')?.errors?.['required']" class="label-text-alt text-red-600">First
             Name is required</span>
         </label>
       </div>
       <div class="form-control w-full max-w-xs">
-        <label class="label">
+        <label class="label" for="lastNameInput">
           <span class="label-text">Last Name</span>
         </label>
         <input type="text" formControlName="lastName" placeholder="Last Name"
           class="input input-bordered w-full max-w-xs" />
-        <label class="label"
+        <label class="label" for="lastNameInput"
           *ngIf="userCreateForm.get('lastName')?.invalid && (userCreateForm.get('lastName')?.dirty || userCreateForm.get('lastName')?.touched)">
           <span *ngIf="userCreateForm.get('lastName')?.errors?.['required']" class="label-text-alt text-red-600">Last
             Name
@@ -33,12 +33,12 @@
         </label>
       </div>
       <div class="form-control w-full max-w-xs">
-        <label class="label">
+        <label class="label" for="usernameInput">
           <span class="label-text">Username</span>
         </label>
         <input type="text" formControlName="username" placeholder="Username"
           class="input input-bordered w-full max-w-xs" />
-        <label class="label"
+        <label class="label" for="usernameInput"
           *ngIf="userCreateForm.get('username')?.invalid && (userCreateForm.get('username')?.dirty || userCreateForm.get('username')?.touched)">
           <span *ngIf="userCreateForm.get('username')?.errors?.['required']"
             class="label-text-alt text-red-600">Username
@@ -46,20 +46,20 @@
         </label>
       </div>
       <div class="form-control">
-        <label class="label cursor-pointer">
+        <label class="label cursor-pointer" for="isAdminCheckbox">
           <span class="label-text">Is Admin?</span>
           <input type="checkbox" formControlName="isAdmin" checked="checked" class="checkbox" />
         </label>
       </div>
       <div class="form-control w-full max-w-xs">
-        <label class="label">
+        <label class="label" for="departmentInput">
           <span class="label-text">Department</span>
         </label>
         <select formControlName="department" class="select select-bordered">
           <option disabled selected>Pick one</option>
           <option *ngFor="let department of departments" [value]="department">{{department}}</option>
         </select>
-        <label class="label"
+        <label class="label" for="departmentInput"
           *ngIf="userCreateForm.get('department')?.invalid && (userCreateForm.get('department')?.dirty || userCreateForm.get('department')?.touched)">
           <span *ngIf="userCreateForm.get('department')?.errors?.['required']"
             class="label-text-alt text-red-600">Department
