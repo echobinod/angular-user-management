@@ -1,4 +1,4 @@
-# AngularUserManagement
+# Develop & test a user management application using Angular & TailwindCSS & Daisy UI.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
@@ -14,9 +14,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Linting
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To ensure code quality and adherence to coding standards, you can use ng lint..
 
 ## Running end-to-end tests
 
